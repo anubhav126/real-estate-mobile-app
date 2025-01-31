@@ -1,50 +1,77 @@
-# Welcome to your Expo app 👋
+# 🏠 Real Estate Explorer [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/your-repo/real-estate-app/pulls)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Find your dream home with this mobile-first property discovery app. Built with React Native and Appwrite. 
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+- **Google OAuth Login**: One-tap sign-in with your Google account
+- **Smart Search**: Find properties by name, location, or keywords
+- **Custom Filters**: Refine by price, property type, or ratings
+- **Favorites System**: Save listings with heart icons
+- **Rich Details**: High-res images, maps, agent contacts, and neighborhood insights
+- **Offline Support**: Browse recently viewed properties without internet
 
+## 🔧 Built With
+
+- **React Native** (TypeScript) - Core framework
+- **Appwrite** - Backend services (Auth + Database)
+- **Expo Router** - Navigation
+- **Tailwind CSS** - Styling
+- **React Query** - Data fetching
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js v18+
+- Expo CLI (`npm install -g expo-cli`)
+- iOS/Android simulator or physical device
+
+### Installation
+
+1. Clone the repo:
    ```bash
-   npm install
-   ```
+   git clone https://github.com/your-username/real-estate-app.git
+   cd real-estate-app
+# Real Estate App
 
-2. Start the app
+## Installation
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### Install Dependencies:
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Start the App:
+```bash
+npx expo start --port [YOUR PORT NUMBER HERE]
+```
 
-## Learn more
+Open the expo application on mobile to view this application.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📂 Project Structure
+```
+real-estate-app/
+├── app/
+│   ├── (auth)/          # Login/signup flows
+│   ├── (tabs)/          # Bottom tab navigation
+│   └── details/[id].tsx # Property detail screen
+├── components/          # Reusable UI components
+├── constants/           # Icons, images, theme config
+├── lib/
+│   ├── appwrite.ts      # Appwrite client setup
+│   └── queries/         # React Query hooks
+└── types/               # TypeScript interfaces
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🔑 Key Components
 
-## Join the community
+### `app/(auth)/sign-in.tsx`
+Handles Google OAuth flow with Appwrite. Redirects to home after successful login.
 
-Join our community of developers creating universal apps.
+### `lib/queries/useProperties.ts`
+Custom hook for fetching/filtering properties with React Query.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### `components/PropertyCard.tsx`
+Responsive card component showing price, beds/baths, and favorite button.
+
