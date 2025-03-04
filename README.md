@@ -75,3 +75,13 @@ Custom hook for fetching/filtering properties with React Query.
 ### `components/PropertyCard.tsx`
 Responsive card component showing price, beds/baths, and favorite button.
 
+### `App Screens`
+![WhatsApp Image 2025-02-28 at 09 51 42_edaedd9f](https://github.com/user-attachments/assets/8d8f80a5-2bc3-4925-86c3-2678d400ab50)
+![WhatsApp Image 2025-02-28 at 09 51 42_a0f34467](https://github.com/user-attachments/assets/94260613-9fd0-44f1-9b88-60d771b9fa41)
+![WhatsApp Image 2025-02-28 at 09 51 42_13595b71](https://github.com/user-attachments/assets/779422b2-c703-4876-8c4c-98bd44ccc3cc)
+![WhatsApp Image 2025-02-28 at 09 51 41_ea584546](https://github.com/user-attachments/assets/defb4151-f250-438a-a797-332993bc6cf2)
+
+
+
+
+
